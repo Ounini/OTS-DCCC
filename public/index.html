@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/about.css" />
+		<link rel="stylesheet" href="../css/animation.css" />
 		<title>Direct Covenant Construction Company</title>
 		<link rel="icon" type="image/jpeg" href="../media/icon.jpeg" />
 	</head>
@@ -125,29 +127,46 @@
 					<button
 						class="navbar-toggler"
 						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#sidebar"
+						aria-controls="sidebar"
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link" href="about.html">About us</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="service.html">services</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="proect.html">Project</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="contact.html">Contact Us</a>
-							</li>
-						</ul>
+					<div
+						class="offcanvas offcanvas-end"
+						tabindex="-1"
+						id="sidebar"
+						aria-labelledby="sidebar1"
+					>
+						<div class="offcanvas-header">
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="offcanvas-body">
+							<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link about" href="about.html">About us</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link services" href="about.html#service"
+										>services</a
+									>
+								</li>
+								<!-- <li class="nav-item">
+									<a class="nav-link project" href="project.html">Project</a>
+								</li> -->
+								<li class="nav-item">
+									<a class="nav-link contact" href="contact.html">Contact Us</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</nav>
@@ -163,7 +182,9 @@
 							class="d-block w-100"
 							alt="Caro Image"
 						/>
-						<h6 id="image1H6">Building Your Dreams, Brick by Brick</h6>
+						<h6 id="image1H6 animate slow-show">
+							Building Your Dreams, Brick by Brick
+						</h6>
 					</div>
 					<div class="carousel-item">
 						<img
@@ -200,10 +221,10 @@
 				</div>
 			</div>
 			<div id="main2" class="text-center py-5">
-				<h2>Direct Covenant Construction Company</h2>
+				<h2 class="animate breath">Direct Covenant Construction Company</h2>
 				<hr class="lined d-flex mx-auto" />
 				<div class="d-grid justify-content-center">
-					<p>
+					<p class="animate slide-up">
 						Provide effective building solutions.<br />
 						Commitment to quality craftsmanship,<br />
 						innovation and client satisfaction.
@@ -215,7 +236,7 @@
 					<div class="col-md-6 mission">
 						<img src="../media/image22.jpeg" alt="Mission" />
 						<!-- <h4>Building Trust, Delivering Excellence</h4> -->
-						<div>
+						<div class="element slide-in">
 							<h4 class="text-center">Our Mission</h4>
 							<hr class="mx-auto" />
 							<p>
@@ -227,7 +248,7 @@
 					</div>
 					<div class="col-md-6 vision">
 						<img src="../media/image12.jpeg" alt="Vision" />
-						<div>
+						<div class="element slide-in">
 							<h4 class="text-center">Our Vision</h4>
 							<!-- <h4>Uncompromising Quality</h4> -->
 							<hr class="mx-auto" />
@@ -241,7 +262,7 @@
 				</div>
 				<div class="whatWeDo">
 					<div class="row text-center">
-						<h3 class="text-center">
+						<h3 class="text-center element slide-up">
 							What We Do
 							<hr class="mx-auto lined" />
 						</h3>
@@ -282,7 +303,7 @@
 				</div>
 				<div class="chooseUs">
 					<div class="row text-center">
-						<h3>
+						<h3 class="element slide-up">
 							Why choose Us
 							<hr class="mx-auto lined" />
 						</h3>
@@ -333,7 +354,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6 offset-md-3">
-								<form class="form">
+								<form class="form element slow-show">
 									<h3 class="text-center mb-4">
 										We Like To Hear From You
 										<hr class="lined mx-auto" />
@@ -388,6 +409,21 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="toTop">
+				<a href="#con2">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="currentColor"
+						class="bi bi-arrow-up"
+						viewBox="0 0 16 16"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"
+						/>
+					</svg>
+				</a>
 			</div>
 		</main>
 

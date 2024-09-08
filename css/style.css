@@ -4,6 +4,13 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	overflow-x: hidden;
 }
+.offcanvas {
+	z-index: 1050;
+	color: #fff;
+	--bs-offcanvas-bg: #ff8c00;
+	--bs-offcanvas-transition: transform 1s ease-in-out;
+	--bs-offcanvas-padding-y: 2em;
+}
 #con2 {
 	background: #0e121d;
 	height: 50px;
@@ -276,7 +283,7 @@ footer {
 		bottom: 50px;
 	}
 	#main2 h2 {
-		margin-top: -150px;
+		margin-top: 0px;
 		font-size: 22px;
 	}
 	#main2 p {
@@ -351,6 +358,11 @@ footer {
 	}
 }
 @media (min-width: 576px) and (max-width: 767px) {
+	.offcanvas li {
+		font-size: 22px;
+		margin-top: 25px;
+		text-transform: uppercase;
+	}
 	#con2 {
 		display: none !important;
 	}
@@ -364,22 +376,22 @@ footer {
 	.carousel h6 {
 		bottom: 30px;
 		left: 0;
-		font-size: 30px;
-		width: 600px;
+		font-size: 25px;
+		width: 500px;
 		text-align: center;
 	}
 	.carousel #image1H6 {
 		bottom: 30px;
 	}
 	#main2 h2 {
-		margin-top: -280px;
+		margin-top: -180px;
 		font-size: 20px;
 	}
 	#main2 p {
 		font-size: 18px;
 	}
 	div.mission {
-		margin: -120px auto 100px;
+		margin: 0 auto 100px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -481,6 +493,14 @@ footer {
 	}
 }
 @media (max-width: 575px) {
+	.offcanvas {
+		--bs-offcanvas-padding-y: 2em;
+		max-width: 250px;
+	}
+	.offcanvas li {
+		margin-top: 19px;
+		font-size: 15px;
+	}
 	#con2 {
 		display: none !important;
 	}
@@ -519,7 +539,7 @@ footer {
 		font-size: 16px;
 	}
 	div.mission {
-		margin: -50px auto 100px;
+		margin: 0 auto 100px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
