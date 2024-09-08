@@ -4,13 +4,14 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>About Us - Direct Covenant Construction Company</title>
-		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/about.css" />
 		<link rel="stylesheet" href="css/animation.css" />
 		<link rel="icon" type="image/jpeg" href="media/icon.jpeg" />
 	</head>
 	<body>
+		<!-- Header -->
 		<header>
 			<div
 				id="con2"
@@ -47,7 +48,7 @@
 					</a>
 				</div>
 				<div>
-					<a href=""
+					<a target="_blank" href=""
 						><svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="currentColor"
@@ -117,7 +118,7 @@
 			</div>
 			<nav class="navbar navbar-expand-md">
 				<div class="container-fluid">
-					<a class="navbar-brand" href="/index.html"
+					<a class="navbar-brand" href="../index.html"
 						><img
 							width="200px"
 							src="media/logo.jpeg
@@ -127,36 +128,53 @@
 					<button
 						class="navbar-toggler"
 						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#sidebar"
+						aria-controls="sidebar"
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link about active" href="about.html">About us</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link services" href="about.html#service"
-									>services</a
-								>
-							</li>
-							<!-- <li class="nav-item">
-								<a class="nav-link project" href="project.html">Project</a>
-							</li> -->
-							<li class="nav-item">
-								<a class="nav-link contact" href="contact.html">Contact Us</a>
-							</li>
-						</ul>
+					<div
+						class="offcanvas offcanvas-end"
+						tabindex="-1"
+						id="sidebar"
+						aria-labelledby="sidebar1"
+					>
+						<div class="offcanvas-header">
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="offcanvas-body">
+							<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link about" href="about.html">About us</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link services" href="about.html#service"
+										>services</a
+									>
+								</li>
+								<!-- <li class="nav-item">
+									<a class="nav-link project" href="project.html">Project</a>
+								</li> -->
+								<li class="nav-item">
+									<a class="nav-link contact" href="contact.html">Contact Us</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</nav>
 		</header>
+		<!-- End of Header -->
 
+		<!-- Main Content -->
 		<main>
 			<section class="hero">
 				<div id="aboutCon1" class="container-fluid">
@@ -251,7 +269,9 @@
 				</div>
 			</section>
 		</main>
+		<!-- End of Main Content -->
 
+		<!-- Footer -->
 		<footer class="container-fluid text-center">
 			<div id="footer2" class="row d-sm-block d-md-none">
 				<div class="col-sm-6">
@@ -358,6 +378,7 @@
 				<span id="year"></span> Direct Convenant Construction Company
 			</div>
 		</footer>
+		<!-- End of Footer -->
 
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery-3.7.0.min.js"></script>
