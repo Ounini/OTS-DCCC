@@ -78,18 +78,20 @@ img.secondAboutImg {
 	margin-top: -200px;
 }
 .contact1 {
-	width: 500px;
-	border: 1px solid #ff8c00;
-	background-color: #ff8c00;
+	width: 100%;
+	max-width: 500px;
+	/* border: 1px solid #ff8c00; */
+	background-color: rgba(255, 140, 0, 0.1);
 	color: #fff;
 }
 .contact1 svg {
-	width: 50px;
+	width: 40px;
 	border: 1px solid #0e121d;
 	border-radius: 100%;
 	background-color: #0e121d;
-	padding: 10px;
+	padding: 5px;
 	margin-top: 20px;
+	margin-right: 20px;
 }
 .contact1 svg:hover {
 	border: 1px solid white;
@@ -113,7 +115,60 @@ img.secondAboutImg {
 	border-radius: 100%;
 }
 .location p {
-	margin-bottom: -5px;
+	margin-bottom: 0px;
+}
+.form-element {
+	width: 100%;
+	max-width: 600px;
+	padding: 20px;
+}
+.firstAboutImg {
+	border: 1px solid #ff8c00;
+	box-shadow: 0 0 10px 0 #ff8c00;
+	border-radius: 10px;
+}
+.form-element input,
+.form-element textarea {
+	background-color: #fff;
+	color: #000;
+}
+.form-element input::placeholder,
+.form-element textarea::placeholder {
+	color: #888;
+}
+.divNextFooter {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+.divNextFooter video {
+	height: 550px;
+	display: block;
+}
+.divNextFooter .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+.form {
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 50px;
+	/* margin-bottom: 50px; */
+	border-radius: 5px;
+}
+#projectCaro {
+	height: 100vh;
+}
+#projectCaro img {
+	height: 100vh;
 }
 
 /* MEDIA BREAKPOINTS */
@@ -122,8 +177,22 @@ img.secondAboutImg {
 @media (min-width: 1200px) and (max-width: 1399px) {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+	.contact1 {
+		max-width: 400px;
+	}
+	.form-element {
+		max-width: 500px;
+	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
+	.contact1 {
+		background-color: #ff8c00;
+		max-width: 400px;
+	}
+	.divNextFooter .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
 	.about img {
 		margin-top: -180px;
 	}
@@ -159,6 +228,10 @@ img.secondAboutImg {
 	/* end of contact us */
 }
 @media (min-width: 576px) and (max-width: 767px) {
+	.contact1 {
+		background-color: #ff8c00;
+		max-width: 400px;
+	}
 	.about img {
 		margin-top: -120px;
 	}
@@ -246,7 +319,9 @@ img.secondAboutImg {
 		margin-top: 0px;
 	}
 	.contact1 {
+		background-color: #ff8c00;
 		width: 100%;
+		max-width: initial;
 		padding: 0;
 	}
 	/* end of contact us */
